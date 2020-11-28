@@ -1,0 +1,21 @@
+#movies img{
+    width: 90%;
+    border-radius: 5px;
+}
+
+#movies .col-md-3 .well{
+    height: 400px;
+    background-color: burlywood;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.jumbotron {
+    margin-bottom: 16px;
+}
+
+#search-bar {
+    margin-bottom: 16px;
+}
+
