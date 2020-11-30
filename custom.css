@@ -5,6 +5,7 @@
 
 #movies .col-md-3 .well{
     height: 400px;
+    width: 170px;
     background-color: burlywood;
     margin-bottom: 15px;
     padding-top: 10px;
@@ -19,3 +20,15 @@
     margin-bottom: 16px;
 }
 
+#genre-bar {
+    margin-bottom: 16px;
+}
+
+.genre {
+    font-size: 0.8rem;
+}
+
+
+#filter{
+    margin-left: 16px;
+}

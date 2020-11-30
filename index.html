@@ -17,25 +17,48 @@
 			<h1>The Movie DB</h1>
 			<h5>Открий любимите си филми, бързо и лесно!</h5> 
 		</div>
-		
+
 		<div id="search-bar" class="text-center">
 			
-			<input type="text" id="search-string" placeholder="име на филм">
-			
+			<input type="text" id="search-string" placeholder="име на филм...">
+
 			<button onclick="searchButton()"> търси </button>
 			
-			<select id="sort-by" placeholder="сортирай по">
-				<option value="0" selected disabled>сортирай по:</option>
-				<option value="az">A - Z</option>
-				<option value="za">Z - A</option>
-				<option value="ya">година възходящ</option>
-				<option value="yd">година низходящ</option>
-				<option value="sa">оценка възходящ</option>
-				<option value="sd">оценка низходящ</option>
+			<select id="sort-by" onChange="sortStuff();">
+				<option selected disabled hidden>сортирай по:</option>
+				<option value="az">Заглавие A - Z</option>
+				<option value="za">Заглавие Z - A</option>
+				<option value="ya">година 1 -> 2</option>
+				<option value="yd">година 2 -> 1</option>
+				<option value="sa">оценка 1 -> 2</option>
+				<option value="sd">оценка 2 -> 1</option>
 			</select>
 
+			<select id="genre-select" onChange="filterByGenre()">
+				<option selected disabled hidden>покажи жанр</option>
+				<option value="28">Екшън</option>
+				<option value="12">Приключенски</option>
+				<option value="16">Анимация</option>
+				<option value="35">Комедия</option>
+				<option value="80">Криминале</option>
+				<option value="99">Документален</option>
+				<option value="18">Драма</option>
+				<option value="10751">Семейни</option>
+				<option value="14">Фентъзи</option>
+				<option value="36">Исторически</option>
+				<option value="27">Ужаси</option>
+				<option value="10402">Мюзикъл</option>
+				<option value="9648">Мистерия</option>
+				<option value="10749">Романтичен</option>
+				<option value="878">Научна Фантастика</option>
+				<option value="10770">TV филми</option>
+				<option value="53">Трилър</option>
+				<option value="10752">Военен</option>
+				<option value="37">Уестърн</option>
+			</select>		
+
 		</div>
-		
+	
 		<div class="container">
 		    <div class="row" id="movies"></div>
 		</div>
